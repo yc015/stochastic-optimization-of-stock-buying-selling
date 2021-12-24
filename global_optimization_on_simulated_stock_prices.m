@@ -43,6 +43,7 @@ for k=1:NSample
     plot(t, stock_prices(:, k))
     hold on
 end
+p = [];
 p(1) = plot(t, ones(length(t), 1) * exp(2),'g','LineWidth',3, 'DisplayName', "Long-term Mean");
 p(2) = plot(t, ones(length(t), 1) * mean(mean(stock_prices)),'r','LineWidth',3, 'DisplayName', "Stock Price Mean");
 title("dX(t) / dt = 0.8(2 - X(t)) + dW(t) / dt",'FontSize', 16)
@@ -124,7 +125,7 @@ end
 figure()
 h = surf(b_all, s_all, reward_all)
 % alpha 0.85
-% set(h,'LineStyle','none')
+set(h,'LineStyle','none')
 xlabel("Buying Threshold")
 ylabel("Selling Threshold")
 zlabel("Reward")
@@ -136,7 +137,7 @@ p(2) = plot3(b(end), s(end), reward(end), 'oblue','linewidth', 6, 'DisplayName',
 text(b(1), s(1), reward(1) + 1, append('Start ', string(reward(1))))
 text(b(end), s(end), reward(end) + 1, append('End ', string(reward(end))))
 % legend(p, "FontSize", 12)
-title("Global Optimization Path over Iterations", "FontSize", 15)
+title("Path of Global Optimization", "FontSize", 15)
 hold off
 
 % Function for approximating the solution to a differential equations
