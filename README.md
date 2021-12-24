@@ -15,8 +15,8 @@ The local method aims to maximize the total trading gain on one trend of stock p
 
 <p float="left">
   <img src="figures/multi_transactions_of_one_stock.png" width="250" />
-  <img src="figures/local_optimization_path.png" width="250" /> 
   <img src="figures/local_optim_unit_gradient.png" width="250" />
+  <img src="figures/local_optimization_path.png" width="250" /> 
 </p>
 <br>
 
@@ -24,8 +24,8 @@ The global method aims to maximize the trading gain on the first possible transa
 
 <p float="left">
   <img src="figures/randomly_simulated_stock_prices.png" width="250" />
-  <img src="figures/global_optimization_path.png" width="250" /> 
   <img src="figures/global_optim_unit_gradient.png" width="250" />
+  <img src="figures/global_optimization_path.png" width="250" /> 
 </p>
 <br>
 
