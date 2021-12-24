@@ -3,8 +3,9 @@
 This project implements and extends the stochastic approximation (SA) method present in Song et al.'s paper, "[Numerical methods for buying-low-and-selling-high stock policy](https://doi.org/10.1109/ACC.2008.4586627)." The goal of this SA algorithm is to find an optimal set of buying and selling thresholds for trading a stock with mean-reversion property. 
 
 <p>
-    <img src="figures/intel_stock_prices.png" width="450" /> 
+    <img src="figures/intel_stock_prices.png" width="350" /> 
 </p>
+<br>
 
 We present three different implementations of this SA method: local, global, local + global optimizations.
 
@@ -17,6 +18,7 @@ The local method aims to maximize the total trading gain on one trend of stock p
   <img src="figures/local_optimization_path.png" width="250" /> 
   <img src="figures/local_optim_unit_gradient.png" width="250" />
 </p>
+<br>
 
 The global method aims to maximize the trading gain on the first possible transaction of stock over N randomly simulated trends of stock prices. The trading gain (objective) is calculated as the mean of reward gain from the first possible transaction on all randomly simulated stock prices.
 
@@ -25,5 +27,6 @@ The global method aims to maximize the trading gain on the first possible transa
   <img src="figures/global_optimization_path.png" width="250" /> 
   <img src="figures/global_optim_unit_gradient.png" width="250" />
 </p>
+<br>
 
 The local + global method optimizes the average of total trading gain on all possible transactions of N randomly simulated trends of stock prices.
