@@ -2,7 +2,7 @@
 
 This project implements and extends the stochastic approximation (SA) method present in Song et al.'s paper, "[Numerical methods for buying-low-and-selling-high stock policy](https://doi.org/10.1109/ACC.2008.4586627)." The goal of this SA algorithm is to find an optimal set of buying and selling thresholds for trading a stock with mean-reversion property. 
 
-<p float="center">
+<p align="center">
     <img src="figures/intel_stock_prices.png" width="350" /> 
 </p>
 <br>
